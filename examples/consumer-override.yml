@@ -1,0 +1,6 @@
+# Consumer example: retain qdk tokens, then make an explicit final local override.
+format:
+  qdk-html:
+    theme:
+      light: [default, _extensions/qdk/qdk.scss, styles.scss]
+      dark: [default, _extensions/qdk/qdk.scss, _extensions/qdk/qdk-dark.scss, styles.scss]

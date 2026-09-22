@@ -1,0 +1,20 @@
+---
+title: "Saved notebook output"
+jupyter: python3
+execute:
+  enabled: true
+---
+
+This page executes a small public arithmetic example during rendering. The same
+calculation is also saved as `notebooks/simple-output.ipynb`, whose output was
+created by executing that notebook locally.
+
+```{python}
+values = [3, 5, 8]
+total = sum(values)
+print(f"Saved notebook output: {values} -> {total}")
+```
+
+The output is intentionally simple: it proves an actual notebook-like output
+surface without importing a scientific workload or making notebook execution a
+consumer requirement.

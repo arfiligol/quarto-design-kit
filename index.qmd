@@ -1,0 +1,56 @@
+---
+title: "Quarto Design Kit"
+subtitle: "A warm, native reading theme / 一個溫暖的原生閱讀主題"
+---
+
+Quarto Design Kit is a local `qdk-html` extension candidate for complete,
+long-form reading. It leaves Quarto's navigation, TOC, callout collapse,
+highlighting, math, and execution features intact while supplying a restrained
+typographic and panel system.
+
+> 這個候選版本以清楚的資訊階層與長文閱讀為優先；內容與資料的所有權仍屬於使用此擴充套件的專案。
+
+## Reading rhythm / 閱讀節奏
+
+The body face is Source Sans 3, code uses IBM Plex Mono, and CJK text follows
+the local system fallback sequence. A thin teal link and a lavender quote rule
+are deliberately quieter than the document itself.
+
+::: {.callout-note title="Native Quarto, not a replacement runtime"}
+The Kit is presentation only. A consumer continues to own site structure,
+notebook execution, mathematics, viewer integrations, access control, and data.
+:::
+
+## Mobile callout inspection target
+
+This section is deliberately concise and narrow-screen friendly. Review it at
+mobile width to check the header, icon, nested panel, keyboard focus, and local
+horizontal overflow boundaries. Its stable fragment is
+`#mobile-callout-inspection-target`.
+
+::: {.callout-tip #mobile-callout-inspection-target title="A teal tip keeps its meaning at every depth" collapse="true"}
+Open this native collapsible tip on desktop and mobile. The type—not nesting
+depth—owns the teal color.
+
+::: {.callout-important title="A nested lavender important callout"}
+This important notice remains lavender inside a teal tip. Its sentence is
+intentionally long enough to demonstrate natural wrapping without a page-wide
+overflow boundary on a compact reading screen.
+:::
+:::
+
+## A bilingual article sample / 雙語文章片段
+
+### Keep the page quiet
+
+A design system for documents should make dense evidence easier to read without
+asking every author to become a frontend specialist. The useful unit is not a
+hero banner but a paragraph, a source cell, a careful note, and the space
+between them.
+
+### 讓頁面保持安靜
+
+文件的設計系統應協助讀者辨識重點，而不是搶走內容本身的注意力。標題、段落、註解與表格都使用同一組 token，因此明亮與深色模式仍保留同樣的閱讀層級。
+
+See [Components](components.qmd) for authoring source and edge cases, then
+[Install & customize](install.qmd) for the bounded consumer interface.

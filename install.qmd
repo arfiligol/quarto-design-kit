@@ -1,0 +1,57 @@
+---
+title: "Install, customize, and update"
+---
+
+## Install an exact candidate
+
+Use an immutable candidate revision, not an editable symlink and not an
+unversioned moving branch. Before the first candidate commit is frozen,
+`CANDIDATE_COMMIT` is a deliberately replaceable placeholder.
+
+```bash
+quarto add arfiligol/quarto-design-kit@CANDIDATE_COMMIT
+```
+
+Then select the format in a consumer `_quarto.yml`:
+
+```yaml
+format:
+  qdk-html:
+    toc: true
+    code-copy: true
+```
+
+The installed copy belongs under the consumer's tracked `_extensions` folder.
+QDK does not fetch fonts, icons, or styles from a CDN.
+
+## Override tokens in the consumer
+
+Create a consumer-owned Sass file, for example `styles.scss`, and list it after
+the format theme. This preserves one Kit token authority while making the
+consumer's explicit final override visible:
+
+```yaml
+format:
+  qdk-html:
+    theme:
+      light: [default, _extensions/qdk/qdk.scss, styles.scss]
+      dark: [default, _extensions/qdk/qdk.scss, _extensions/qdk/qdk-dark.scss, styles.scss]
+```
+
+```scss
+/* Consumer-owned final override: change only a declared QDK token. */
+/*-- scss:rules --*/
+:root { --qdk-link: #2D5E85; }
+```
+
+Render the consumer and inspect the resulting CSS to verify its final token
+value. Do not edit a copy inside `_extensions/qdk`; reinstall the exact revision
+instead.
+
+## Update
+
+Choose a new exact candidate revision only after reviewing its provenance and
+rendering the consumer. Replace the installed extension through `quarto add`
+with that exact revision, commit the resulting `_extensions` change in the
+consumer, and repeat its own validation. Future release tags are not promised
+by this `0.1.0-dev` candidate.

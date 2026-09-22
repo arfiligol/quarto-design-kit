@@ -1,0 +1,123 @@
+---
+title: "Components and native callouts"
+---
+
+## Callout mapping
+
+The extension maps native Quarto types to a fixed visual meaning: note is muted
+blue with info, tip is teal with flame, important is lavender with circle alert,
+warning is amber with triangle alert, and caution is coral with octagon alert.
+The icons are bundled local Lucide SVGs, exposed as CSS masks rather than a new
+runtime.
+
+The shell, title, semantic alpha border/fill, 5px radius, icon, and native
+chevron follow Quartz's callout showcase as closely as Quarto's DOM permits.
+Quarto's five native types, their collapse behavior, and nested callouts are
+the current interface. Quartz's additional family aliases are intentionally not
+invented here: exposing them needs a separate authoring syntax transformer and
+public contract rather than a brittle visual-only imitation.
+
+::: {.callout-note title="Note / 註記"}
+Use note for context that informs but does not interrupt the main thread.
+:::
+
+::: {.callout-tip title="Tip / 提示"}
+Use tip for a helpful practice. The icon remains the flame at all depths.
+:::
+
+::: {.callout-important title="Important / 重要"}
+Use important for a material reader decision.
+:::
+
+::: {.callout-warning title="Warning / 警告"}
+Use warning when readers should inspect a condition before proceeding.
+:::
+
+::: {.callout-caution title="Caution / 注意"}
+Use caution for a concrete risk whose consequence should remain visible.
+:::
+
+## Native edge cases
+
+::: {.callout-note title="A deliberately long custom native title that wraps naturally on a compact phone without changing the callout type"}
+Long custom titles remain part of the native header.
+:::
+
+::: {.callout-tip title="" icon=false appearance="simple"}
+This is a native titleless, iconless simple tip. It is still semantically a tip.
+:::
+
+::: {.callout-warning title="Collapsed native warning" collapse="true"}
+This body is available through Quarto's own disclosure control; QDK does not
+replace its behavior.
+:::
+
+::: {.callout-caution title="Expanded native caution" collapse="false" appearance="minimal"}
+Minimal appearance continues to be Quarto's presentation choice, with Kit
+colors applied to the supported callout DOM.
+:::
+
+## Native thematic break
+
+QDK deliberately leaves headings unruled. Add a divider only when a reading
+transition needs one, using ordinary Markdown rather than a Kit component.
+
+---
+
+Source authoring:
+
+```markdown
+## Native thematic break
+
+---
+```
+
+## Nested source and result
+
+Rendered result:
+
+::: {.callout-tip title="Prepare the reader"}
+The teal parent gives a helpful orientation.
+
+::: {.callout-important title="Preserve a decision boundary"}
+The lavender child carries the important condition, rather than inheriting teal.
+:::
+:::
+
+Source authoring:
+
+```markdown
+::: {.callout-tip title="Prepare the reader"}
+The teal parent gives a helpful orientation.
+
+::: {.callout-important title="Preserve a decision boundary"}
+The lavender child carries the important condition.
+:::
+:::
+```
+
+## Tables, code, and equations
+
+| Component | Local behavior | Reader concern |
+|---|---|---|
+| Table / 表格 | A wide table scrolls inside its own responsive wrapper instead of assigning arbitrary cell widths. | Keep headers meaningful. |
+| Code / 程式碼 | Indentation and Quarto copy controls remain native; long lines scroll locally. | Do not turn source into prose. |
+| Formula / 公式 | Display mathematics may scroll locally on narrow screens. | Preserve symbols and reading order. |
+
+```python
+def describe_reading_surface(theme: str, width: int) -> str:
+    return f"{theme} surface at {width}px retains local overflow boundaries"
+
+long_line = "qdk keeps this intentionally long source line in a local preformatted scroll area rather than allowing it to widen the whole page beyond the reader viewport"
+print(describe_reading_surface("dark", 360), long_line)
+```
+
+For a deliberately long expression, the local math container protects the page
+width while leaving the equation legible:
+
+$$
+\mathcal{R}(x) = \sum_{k=1}^{n} \frac{\alpha_k\,\exp\left(-\frac{(x-\mu_k)^2}{2\sigma_k^2}\right)}{\sqrt{2\pi}\sigma_k} + \int_0^\infty \frac{\lambda^2 + \omega^2 + \eta^2}{(\lambda + \omega + \eta)^2}\,d\omega.
+$$
+
+The [saved notebook output](notebook-output.qmd) is a separate, real simple
+execution artifact rather than a simulated output block.
