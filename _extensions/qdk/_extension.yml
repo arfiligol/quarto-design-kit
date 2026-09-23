@@ -9,12 +9,11 @@ contributes:
       theme:
         light: [default, qdk.scss]
         dark: [default, qdk.scss, qdk-dark.scss]
-      css: qdk.css
       theme-toggle: true
       toc: true
       page-layout: article
       grid:
-        sidebar-width: 260px
-        body-width: 960px
+        sidebar-width: 240px
+        body-width: 630px
         margin-width: 240px
-        gutter-width: 2.5rem
+        gutter-width: 1.5rem

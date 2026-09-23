@@ -77,24 +77,31 @@ The divider hierarchy was rerendered with explicit theme tokens. Light content
 and layout dividers are respectively `rgba(43, 43, 43, .18)` and
 `rgba(43, 43, 43, .08)`; dark values are `rgba(212, 212, 212, .24)` and
 `rgba(212, 212, 212, .10)`. The manual `hr` uses the content token at 1px with
-`opacity: 1`; the desktop docked sidebar's inline-end/right border uses the
-layout token, while mobile/offcanvas inline-end boundaries are transparent.
+`opacity: 1`; mobile/offcanvas inline-end boundaries stay transparent. The
+desktop docked sidebar no longer draws a layout-token seam, so the side
+columns share the article canvas.
 
-The native article-grid defaults now compile to sidebar 260px, body 960px,
-margin 240px, and gutter 2.5rem. `#quarto-document-content` is a 630px-or-less
-box with `justify-self: center` and auto inline margins, so it centers within
-Quarto's body track instead of pinning to the track start. Navbar rules center
-the native container, collapse, navigation list, and tools as flex items; links
-use a 1.25 line-height with `.25rem` block padding. Article list rhythm is
-scoped to `#quarto-document-content`, with the navbar list explicitly reset to
-zero block margin so Quarto navigation cannot inherit article spacing. Desktop
-links are `.9rem`/400 (active 600) against the `.98rem`/700 brand; mobile links
-are `.85rem`. Light Sass compiles the toggle SVG source with
-`rgba(43, 43, 43, 1)` and the dark-only stylesheet inverts that fixed source
-for contrast. The desktop sidebar's directional border longhands are an
-intentional `!important` override of Quarto's generated physical border.
-Post-change browser center/contrast measurements remain owner-side visual
-evidence.
+The native article-grid defaults now compile from `$grid-sidebar-width` and
+`$grid-margin-width` at 240px, `$grid-body-width` and `$grid-docked-body-width`
+at 630px, and `$grid-column-gutter-width` at 1.5rem. `$sidebar-border` is
+false, so the desktop docked sidebar does not draw a layout seam. Quarto's
+docked formula still widens the body by 200px and leaves spare space in a
+right-hand flexible column, so one `qdk.scss` rule restates the desktop docked
+grid from those variables: outer flexible tracks, 240px side columns, 1.5rem
+gutters, and a 630px measure. `#quarto-document-content`
+is a 630px-or-less box with `justify-self: center` and auto inline margins, so
+it fills that track and stays centered between the side columns. Navbar rules
+center the native container and tools as flex items at desktop width; below
+992px the collapse keeps Bootstrap's hidden menu instead of a forced flex row.
+Links use a 1.25 line-height with `.25rem` block padding. Article list rhythm
+is scoped to `#quarto-document-content`, with the navbar list explicitly reset
+to zero block margin so Quarto navigation cannot inherit article spacing.
+Desktop links are `.9rem`/400 (active 600) against the `.98rem`/700 brand;
+mobile links are `.85rem`. The theme toggle is a 28px control that shows a
+sun in the light scheme and a moon in the dark scheme, both painted with
+`currentColor`. The callout disclosure is a centered chevron in the same
+color as its title. Post-change browser center/contrast measurements remain
+owner-side visual evidence.
 
 ```bash
 quarto add <temporary-qdk-extension.zip> --no-prompt

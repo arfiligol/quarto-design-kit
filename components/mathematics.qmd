@@ -1,0 +1,12 @@
+---
+title: "Mathematics"
+subtitle: "Display math stays inside the measure"
+---
+
+Display mathematics may scroll locally. The page width stays the 630px measure.
+
+$$
+\mathcal{R}(x) = \sum_{k=1}^{n} \frac{\alpha_k\,\exp\left(-\frac{(x-\mu_k)^2}{2\sigma_k^2}\right)}{\sqrt{2\pi}\sigma_k} + \int_0^\infty \frac{\lambda^2 + \omega^2 + \eta^2}{(\lambda + \omega + \eta)^2}\,d\omega.
+$$
+
+Inline mathematics stays in the sentence, as in $\omega_r = 2\pi f$.

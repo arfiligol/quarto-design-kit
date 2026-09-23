@@ -6,11 +6,16 @@ $link-color: #7b97aa;
 $navbar-bg: #161618;
 $navbar-fg: #ebebec;
 $navbar-hl: #7b97aa;
+$sidebar-bg: #161618;
+$sidebar-fg: #d4d4d4;
+$sidebar-hl: #7b97aa;
+$toc-color: #646464;
 $border-color: #393639;
 $headings-color: #ebebec;
 $table-border-color: #393639;
 $table-striped-bg: rgba(143, 159, 169, .15);
 $code-color: #ebebec;
+$code-block-bg: #1f1f22;
 $pre-color: #ebebec;
 
 /*-- scss:rules --*/
@@ -27,12 +32,6 @@ $pre-color: #ebebec;
   --qdk-highlight: rgba(143, 159, 169, .15);
   --qdk-mark: #b3aa0288;
   --qdk-focus: #7b97aa;
-}
-
-/* Quarto builds the toggle SVG from the light Bootstrap layer; this dark-only
- * stylesheet inverts that fixed source so its native icon remains visible. */
-#quarto-header .quarto-color-scheme-toggle .bi::before {
-  filter: invert(1);
 }
 
 /*

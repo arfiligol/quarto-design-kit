@@ -33,10 +33,12 @@ not introduce Quartz's additional callout families or aliases: that would need
 a separate public authoring syntax contract.
 
 QDK is intended as a reusable design-system candidate for direct SCQ-repository
-adoption. Its native article-grid defaults are a 260px sidebar, 960px body,
-240px margin, and 2.5rem gutter, with the actual reading document centered at
-a Quartz-derived 630px measure; consumers retain Quarto's responsive layout,
-navigation, and runtime ownership.
+adoption. The theme Sass variables `$grid-sidebar-width` and `$grid-margin-width`
+are 240px, `$grid-body-width` and `$grid-docked-body-width` are 630px, and
+`$grid-column-gutter-width` is 1.5rem. One docked track rule in `qdk.scss`
+uses those variables so the 630px measure stays centered between equal side
+columns; consumers retain Quarto's responsive layout, navigation, and runtime
+ownership.
 
 ## Customize and update
 
@@ -54,5 +56,3 @@ Render the source gallery locally with `quarto render .`; it demonstrates
 article/navigation/TOC/mobile reading, native callouts, tables, code, formulas,
 and real saved notebook output. See [credits.qmd](credits.qmd),
 [THIRD_PARTY.md](THIRD_PARTY.md), and [ASSET_MANIFEST.md](ASSET_MANIFEST.md).
-
-本 Quarto Design Kit 的視覺設計大量參考 Quartz，並將部分樣式適配至 Quarto；具體來源與修改紀錄列於第三方來源清單。

@@ -1,0 +1,17 @@
+---
+title: "Tables"
+subtitle: "Header and cell rules"
+---
+
+The header rule is 2px in the muted token. Body cells use a 1px border in the
+content border token. A wide table scrolls in its own wrapper.
+
+| Component | Local behavior | Reader concern |
+| --- | --- | --- |
+| Table | A wide table scrolls inside its own responsive wrapper instead of assigning arbitrary cell widths. | Keep headers meaningful. |
+| Code | Indentation and Quarto copy controls remain native; long lines scroll locally. | Do not turn source into prose. |
+| Formula | Display mathematics may scroll locally on narrow screens. | Preserve symbols and reading order. |
+
+| Band | Resonator | Filter | Qubit | Readout | Purcell | Notes that are intentionally long enough to force the table past the reading measure |
+| --- | --- | --- | --- | --- | --- | --- |
+| Low | 4.2 GHz | open | floating | quarter wave | intrinsic | This last cell exists so the table, not the page, owns the horizontal scroll. |

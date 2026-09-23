@@ -2,8 +2,6 @@
 title: "Credits and attribution"
 ---
 
-本 Quarto Design Kit 的視覺設計大量參考 Quartz，並將部分樣式適配至 Quarto；具體來源與修改紀錄列於第三方來源清單。
-
 This Quarto Design Kit draws substantial visual inspiration from Quartz and
 adapts selected styling ideas to Quarto; the precise sources and modification
 record are in the third-party source list.

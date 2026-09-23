@@ -1,0 +1,54 @@
+---
+title: "CJK specimen"
+---
+
+Body text uses Source Sans 3, then the local CJK fallback. This page is here
+so that fallback can be checked. It is a Gallery page, not a header Area.
+Section headings stay English. Chinese appears only in the samples.
+
+## Heading and paragraph
+
+### 安靜的標題 {.unlisted}
+
+文件的設計系統應協助讀者辨識重點，而不是搶走內容本身的注意力。標題、段落與註解使用同一組 token，明亮與深色模式仍保留同樣的閱讀層級。
+
+## Link, list, and quote
+
+閱讀節奏的說明見 [版面](layout.qmd)。
+
+- 段落保持可讀的行距
+- 連結使用細的強調色
+- 清單記號不搶過正文
+
+> 這一頁只檢查中文排版。網站其餘頁面仍是英文。
+
+## Callouts
+
+::: {.callout-note title="Note"}
+註記提供上下文，不打斷主要閱讀。
+:::
+
+::: {.callout-tip title="Tip"}
+提示用來指出一個有幫助的做法。
+:::
+
+::: {.callout-important title="Important"}
+重要用來標出讀者需要決定的事。
+:::
+
+::: {.callout-warning title="Warning"}
+警告表示繼續之前應先檢查一個條件。
+:::
+
+::: {.callout-caution title="Caution"}
+注意表示一個應保持可見的具體風險。
+:::
+
+## Code and table
+
+窄螢幕上，行內程式 `閱讀寬度` 仍留在句子裡。
+
+| 元件 | 檢查 |
+| --- | --- |
+| 標題 | 字重與行距 |
+| 表格 | 儲存格內換行 |

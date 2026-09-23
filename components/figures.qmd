@@ -1,0 +1,42 @@
+---
+title: "Figures and groups"
+subtitle: "Still Quarto's presentation"
+---
+
+These components render with Quarto's own layout. The Kit does not yet restyle
+them. They are here so that choice can be reviewed.
+
+## Columns
+
+::: {.columns}
+::: {.column width="50%"}
+The left column is half of the content measure.
+:::
+
+::: {.column width="50%"}
+The right column is the other half. A narrow screen stacks them.
+:::
+:::
+
+## Tabset
+
+::: {.panel-tabset}
+## First
+
+A tab is a Quarto panel, not a Kit component.
+
+## Second
+
+The second panel stays in the same article width.
+:::
+
+## Diagram
+
+```{mermaid}
+flowchart LR
+  Areas[Areas] --> Pages[Page List]
+  Pages --> Article[Article]
+  Article --> Sections[Section List]
+```
+
+The diagram above is the figure sample. This gallery does not ship a photograph.

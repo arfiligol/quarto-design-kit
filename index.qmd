@@ -1,16 +1,17 @@
 ---
 title: "Quarto Design Kit"
-subtitle: "A warm, native reading theme / 一個溫暖的原生閱讀主題"
+subtitle: "A warm, native reading theme"
 ---
 
 Quarto Design Kit is a local `qdk-html` extension candidate for complete,
 long-form reading. It leaves Quarto's navigation, TOC, callout collapse,
 highlighting, math, and execution features intact while supplying a restrained
-typographic and panel system.
+typographic and panel system. How this site arranges Areas, the Page List,
+and the Section List is recorded on the [Layout](gallery/layout.qmd) page.
 
-> 這個候選版本以清楚的資訊階層與長文閱讀為優先；內容與資料的所有權仍屬於使用此擴充套件的專案。
+> This candidate puts a clear information hierarchy and long-form reading first. Content and data stay with the project that uses the extension.
 
-## Reading rhythm / 閱讀節奏
+## Reading rhythm
 
 The body face is Source Sans 3, code uses IBM Plex Mono, and CJK text follows
 the local system fallback sequence. A thin teal link and a lavender quote rule
@@ -39,7 +40,7 @@ overflow boundary on a compact reading screen.
 :::
 :::
 
-## A bilingual article sample / 雙語文章片段
+## A reading sample
 
 ### Keep the page quiet
 
@@ -48,9 +49,7 @@ asking every author to become a frontend specialist. The useful unit is not a
 hero banner but a paragraph, a source cell, a careful note, and the space
 between them.
 
-### 讓頁面保持安靜
-
-文件的設計系統應協助讀者辨識重點，而不是搶走內容本身的注意力。標題、段落、註解與表格都使用同一組 token，因此明亮與深色模式仍保留同樣的閱讀層級。
+CJK fallback for body text is on the [CJK specimen](gallery/cjk.qmd) page.
 
 See [Components](components.qmd) for authoring source and edge cases, then
-[Install & customize](install.qmd) for the bounded consumer interface.
+[Install](install.qmd) for the bounded consumer interface.

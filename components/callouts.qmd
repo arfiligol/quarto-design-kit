@@ -1,0 +1,68 @@
+---
+title: "Callouts"
+subtitle: "Five native types"
+---
+
+The extension maps native Quarto types to a fixed visual meaning: note is muted
+blue with info, tip is teal with flame, important is lavender with circle alert,
+warning is amber with triangle alert, and caution is coral with octagon alert.
+The icons are bundled local Lucide SVGs, exposed as CSS masks rather than a new
+runtime.
+
+The shell, title, semantic alpha border and fill, 5px radius, icon, and
+chevron follow Quartz's callout showcase as closely as Quarto's DOM permits.
+Quarto's five native types, their collapse behavior, and nested callouts are
+the current interface. Quartz's additional families and aliases are not invented
+here.
+
+## The five types
+
+::: {.callout-note title="Note"}
+Use note for context that informs but does not interrupt the main thread.
+:::
+
+::: {.callout-tip title="Tip"}
+Use tip for a helpful practice. The icon remains the flame at all depths.
+:::
+
+::: {.callout-important title="Important"}
+Use important for a material reader decision.
+:::
+
+::: {.callout-warning title="Warning"}
+Use warning when readers should inspect a condition before proceeding.
+:::
+
+::: {.callout-caution title="Caution"}
+Use caution for a concrete risk whose consequence should remain visible.
+:::
+
+## Edge cases
+
+::: {.callout-note title="A deliberately long custom native title that wraps naturally on a compact phone without changing the callout type"}
+Long custom titles remain part of the native header.
+:::
+
+::: {.callout-tip title="" icon=false appearance="simple"}
+This is a native titleless, iconless simple tip. It is still semantically a tip.
+:::
+
+::: {.callout-warning title="Collapsed native warning" collapse="true"}
+This body is available through Quarto's own disclosure control. The Kit replaces
+the chevron graphic and keeps the control centered with the title.
+:::
+
+::: {.callout-caution title="Expanded native caution" collapse="false" appearance="minimal"}
+Minimal appearance continues to be Quarto's presentation choice, with Kit
+colors applied to the supported callout DOM.
+:::
+
+## Nested callouts
+
+::: {.callout-tip title="Prepare the reader"}
+The teal parent gives a helpful orientation.
+
+::: {.callout-important title="Preserve a decision boundary"}
+The lavender child carries the important condition, rather than inheriting teal.
+:::
+:::

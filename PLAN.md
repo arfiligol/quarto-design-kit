@@ -9,9 +9,10 @@ accepted, stabilized, released, deployed, or compatibility-guaranteed theme.
 ## Ownership and interfaces
 
 The extension is self-contained at `_extensions/qdk` and exposes one public
-format name: `qdk-html`. Its token authority is `qdk.scss`; `qdk.css` applies
-Quartz-derived visual rules to native Quarto DOM without importing Quartz
-runtime or layout. Schibsted Grotesk (400/700) owns titles and navigation UI;
+format name: `qdk-html`. Its token authority is `qdk.scss`: documented Quarto
+Sass variables own color, type, callout color, code, navbar, sidebar, and grid
+widths, and `scss:rules` applies the remaining Quartz-derived visuals without
+importing a Quartz runtime. Schibsted Grotesk (400/700) owns titles and navigation UI;
 Source Sans 3 (400/600 plus italic) is the locally pinned Source Sans Pro
 successor used for body text; IBM Plex Mono owns code. Consumers own content, IA, execution,
 math engine, viewer behavior, privacy, data, and navigation choices. The
@@ -19,11 +20,14 @@ gallery at this repository root is the source-backed evaluation surface.
 The shared token authority distinguishes content dividers from quieter layout
 dividers in each native theme; manual Markdown `---` is the opt-in content
 divider, while sidebar and navigation boundaries use the layout token.
-QDK is a reusable design-system candidate for direct SCQ-repository adoption:
-its native Quarto layout contract is article pages with 260px sidebar, 960px
-body, 240px margin, and 2.5rem gutter tracks, while the document itself stays
-centered at Quartz's 630px reading measure. This is a layout authority, not a
-page-specific positioning workaround.
+QDK is a reusable design-system candidate for direct SCQ-repository adoption.
+Its layout contract is the theme variables `$grid-sidebar-width` and
+`$grid-margin-width` at 240px, `$grid-body-width` and `$grid-docked-body-width`
+at 630px, and `$grid-column-gutter-width` at 1.5rem. `$sidebar-border` is
+false. One `scss:rules` track list restates the docked grid from those
+variables so the 630px measure stays centered; Quarto's own formula would add
+200px to the body and leave the spare space in a right-hand 5fr column. That
+track rule is the residual coupling to Quarto's grid line names.
 
 ## Candidate behavior and failure boundaries
 
