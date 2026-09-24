@@ -35,3 +35,9 @@ Headings do not supply this line. Authors opt in with `---`.
 ---
 
 The line is 1px, using the content divider token, at full opacity.
+
+## Limits
+
+The theme contains a paragraph link and a nested list inside the measure.
+A paragraph used as a heading, or a list item that is an entire section, should
+be rewritten as a heading plus a short paragraph.

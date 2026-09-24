@@ -10,3 +10,9 @@ $$
 $$
 
 Inline mathematics stays in the sentence, as in $\omega_r = 2\pi f$.
+
+## Limits
+
+The theme contains a long display formula by scrolling inside the measure.
+Do not encode a sentence as display mathematics. Name the quantity in prose,
+and keep the formula to the relation.

@@ -1,0 +1,36 @@
+---
+title: "References"
+subtitle: "In-text citations and the reference list"
+bibliography: references.bib
+link-citations: true
+---
+
+A knowledge-node page cites the claim in the sentence and keeps the full
+record at the end. This specimen uses Quarto's citation syntax. It is not a
+scientific article, and it does not document an SCQ topic.
+
+A literature review is a selection, not a dump of everything read
+[@pautasso2013]. Software that produces a result needs a citable identity of
+its own [@smith2016]. The sentence can name two sources without turning into a
+bracket list.
+
+The reading measure still comes from the same tools that set type. Knuth's
+*TeXbook* fixes the box model this page inherits [@knuth1984], Lamport's
+manual is the document syntax most scientific pages still assume
+[@lamport1994], and Bringhurst states the typographic limits a theme should
+not invent around [@bringhurst2004].
+
+Quarto turns `@key` and `[@key]` into links when `link-citations` is set
+[@quartoCitations]. Pandoc builds the list and the backlinks
+[@pandocCitations]. A long title stays in the list rather than in the heading:
+the house style manual is cited here, and its full name belongs below
+[@chicago2017].
+
+## Limits
+
+The theme keeps a long identifier, DOI, or URL inside the measure by allowing
+it to wrap. It does not restyle the reference list's hanging indent.
+
+Put a few citations in a sentence, not a cluster in every clause. The list
+belongs at the end of the page. A heading should name the claim; it should
+not carry the bibliography.

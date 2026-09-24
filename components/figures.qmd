@@ -40,3 +40,10 @@ flowchart LR
 ```
 
 The diagram above is the figure sample. This gallery does not ship a photograph.
+
+## Limits
+
+The theme contains columns, a tabset, and this diagram inside the article
+width. A figure wider than the measure, or one whose labels are unreadably
+small, should be redrawn. Do not shrink the type to force a poster into the
+column.

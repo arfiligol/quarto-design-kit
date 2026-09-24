@@ -15,3 +15,10 @@ content border token. A wide table scrolls in its own wrapper.
 | Band | Resonator | Filter | Qubit | Readout | Purcell | Notes that are intentionally long enough to force the table past the reading measure |
 | --- | --- | --- | --- | --- | --- | --- |
 | Low | 4.2 GHz | open | floating | quarter wave | intrinsic | This last cell exists so the table, not the page, owns the horizontal scroll. |
+
+## Limits
+
+The theme contains a wide table and an unbreakable path or SHA-256 inside a
+cell: the hash may wrap, and extra columns scroll inside the table wrapper.
+Do not write an essay in a cell. If a cell needs more than one sentence, move
+that text into the paragraph above the table.

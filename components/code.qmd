@@ -22,3 +22,9 @@ print(describe_reading_surface("dark", 360), long_line)
 def quiet(width: int) -> str:
     return f"measure {width}px"
 ```
+
+## Limits
+
+The theme contains a long source line by scrolling inside the fenced block.
+Do not wrap a paragraph in a code fence to force a measure; prose belongs in
+the article, and a fence is for source.

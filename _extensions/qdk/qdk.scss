@@ -84,7 +84,7 @@ $grid-docked-body-width: 630px;
 html { overflow-x: hidden; text-size-adjust: none; }
 body { background: var(--qdk-canvas); color: var(--qdk-text); font-family: $font-family-sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.6rem; text-wrap: pretty; }
 #quarto-content { overflow-x: clip; }
-#quarto-document-content { box-sizing: border-box; inline-size: min(#{$grid-body-width}, 100%); justify-self: center; margin-inline: auto; max-width: $grid-body-width; }
+#quarto-document-content { box-sizing: border-box; inline-size: min(#{$grid-body-width}, 100%); justify-self: center; margin-inline: auto; max-width: $grid-body-width; min-width: 0; overflow-x: auto; }
 p, li, tbody td { line-height: 1.6rem; }
 #quarto-document-content p, #quarto-document-content ul, #quarto-document-content ol { margin-block: 1rem; }
 strong, #quarto-document-content a:not(.btn) { font-weight: 600; }
@@ -186,7 +186,10 @@ div.sourceCode > pre.sourceCode, div.sourceCode > pre.sourceCode > code.sourceCo
 .code-copy-outer-scaffold:hover .code-copy-button, .code-copy-button:focus-visible { opacity: 1; }
 
 .table-responsive, .cell-output, .cell-output-display, .quarto-embedded-source-code, .sourceCode, pre { max-width: 100%; overflow-x: auto; }
+.table-responsive { min-width: 0; }
 table { border-color: var(--qdk-border); margin: 1rem 0; }
+td code, th code { overflow-wrap: anywhere; }
+#refs .csl-entry { overflow-wrap: anywhere; }
 thead th { border-bottom: 2px solid var(--qdk-muted); line-height: 2rem; padding: .4rem .7rem; }
 tbody td { border-bottom: 1px solid var(--qdk-border); padding: .2rem .7rem; }
 .MathJax, .katex-display, img, video { max-width: 100%; }

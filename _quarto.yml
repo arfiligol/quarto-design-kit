@@ -50,6 +50,8 @@ website:
           href: components/tables.qmd
         - text: "Mathematics"
           href: components/mathematics.qmd
+        - text: "References"
+          href: components/references.qmd
         - text: "Figures and groups"
           href: components/figures.qmd
         - text: "Saved notebook output"

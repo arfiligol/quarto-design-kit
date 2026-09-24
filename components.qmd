@@ -18,6 +18,8 @@ be reviewed before any further change.
 - [Tables](components/tables.qmd). Header and cell rules.
 - [Mathematics](components/mathematics.qmd). Display math scrolls inside the
   measure.
+- [References](components/references.qmd). In-text citations and the reference
+  list.
 
 ## Still Quarto's own presentation
 

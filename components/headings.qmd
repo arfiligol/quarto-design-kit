@@ -30,3 +30,9 @@ A reading break is an ordinary thematic break, not a heading rule.
 ---
 
 That rule is the content divider. It is not attached to the heading.
+
+## Limits
+
+The theme contains a heading that wraps onto a second line inside the measure.
+A heading that is really a paragraph should be split: keep the heading short,
+and put the explanation in the body.

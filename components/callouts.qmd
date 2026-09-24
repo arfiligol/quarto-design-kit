@@ -66,3 +66,10 @@ The teal parent gives a helpful orientation.
 The lavender child carries the important condition, rather than inheriting teal.
 :::
 :::
+
+## Limits
+
+The theme contains a long native title and a nested callout without letting
+either widen the page. Do not put a table, a figure, and several paragraphs
+inside one callout; move that material into the article and leave the callout
+as the warning.

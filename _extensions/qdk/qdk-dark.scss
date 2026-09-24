@@ -19,6 +19,26 @@ $code-block-bg: #1f1f22;
 $pre-color: #ebebec;
 
 /*-- scss:rules --*/
+#quarto-appendix.default {
+  background-color: var(--qdk-canvas);
+  border-top-color: var(--qdk-border);
+  color: var(--qdk-text);
+}
+#quarto-appendix.default .quarto-appendix-heading {
+  color: var(--qdk-heading);
+  opacity: 1;
+}
+#quarto-appendix.default .csl-entry {
+  color: var(--qdk-text);
+}
+#quarto-appendix.default .csl-entry a {
+  color: var(--qdk-link);
+}
+#quarto-appendix.default .quarto-appendix-bibtex,
+#quarto-appendix.default .quarto-appendix-citeas {
+  border-color: var(--qdk-border);
+}
+
 :root {
   --qdk-canvas: #161618;
   --qdk-text: #d4d4d4;

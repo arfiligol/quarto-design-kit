@@ -18,3 +18,9 @@ print(f"Saved notebook output: {values} -> {total}")
 The output is intentionally simple: it proves an actual notebook-like output
 surface without importing a scientific workload or making notebook execution a
 consumer requirement.
+
+## Limits
+
+The theme contains a short printed result inside the article width. A cell
+that prints a wide table or a page of diagnostics should be saved as an
+artifact and summarized in the page, not pasted in full.
