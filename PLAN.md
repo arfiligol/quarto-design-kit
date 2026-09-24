@@ -1,10 +1,11 @@
-# Quarto Design Kit candidate plan
+# Quarto Design Kit release plan
 
 ## Goal and state
 
 This repository owns the `qdk-html` native Quarto HTML extension and its local
-gallery. It is a **0.1.0-dev CONVERGING candidate** for Quarto 1.10.18, not an
-accepted, stabilized, released, deployed, or compatibility-guaranteed theme.
+gallery. The **0.1.0 release candidate** targets Quarto 1.10.18. Its visual
+semantics remain CONVERGING until explicit Human acceptance; a version number,
+merge, or tag does not establish semantic stabilization or deployment.
 
 ## Ownership and interfaces
 
@@ -44,13 +45,13 @@ would require a new authoring syntax transformer or public contract.
 ## Exclusions
 
 No tests or CI are written while this scope is CONVERGING. This package does
-not provide a website deployment, release/tag, analytics, search, graphs,
+not provide a website deployment, analytics, search, graphs,
 backlinks, hover previews, robots, emoji, consumer APIs, or scientific
 execution policy.
 
 ## Validation endpoint
 
-Render this gallery and a clean consumer that installs an exact revision,
+Render this gallery and a clean consumer that installs the reviewed version tag,
 including a documented Sass override. Inspect desktop/mobile and light/dark
 native Quarto behavior, focus, overflow, callout nesting/collapse, navigation,
 TOC and code-copy. Record factual outcomes in `VALIDATION.md`; those findings

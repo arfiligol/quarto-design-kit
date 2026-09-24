@@ -48,16 +48,17 @@ $grid-body-width: 630px;
 $grid-margin-width: 240px;
 $grid-column-gutter-width: 1.5rem;
 $grid-docked-body-width: 630px;
+$qdk-assets-root: "_extensions/arfiligol/qdk/assets" !default;
 
 /*-- scss:rules --*/
-@font-face { font-family: "Schibsted Grotesk"; src: url("_extensions/qdk/assets/fonts/SchibstedGrotesk-Regular.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
-@font-face { font-family: "Schibsted Grotesk"; src: url("_extensions/qdk/assets/fonts/SchibstedGrotesk-Bold.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
-@font-face { font-family: "Source Sans 3"; src: url("_extensions/qdk/assets/fonts/SourceSans3VF-Upright.ttf.woff2") format("woff2"); font-style: normal; font-weight: 400 600; font-display: swap; }
-@font-face { font-family: "Source Sans 3"; src: url("_extensions/qdk/assets/fonts/SourceSans3VF-Italic.ttf.woff2") format("woff2"); font-style: italic; font-weight: 400 600; font-display: swap; }
-@font-face { font-family: "IBM Plex Mono"; src: url("_extensions/qdk/assets/fonts/IBMPlexMono-Regular.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
-@font-face { font-family: "IBM Plex Mono"; src: url("_extensions/qdk/assets/fonts/IBMPlexMono-Italic.woff2") format("woff2"); font-style: italic; font-weight: 400; font-display: swap; }
-@font-face { font-family: "IBM Plex Mono"; src: url("_extensions/qdk/assets/fonts/IBMPlexMono-Bold.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
-@font-face { font-family: "IBM Plex Mono"; src: url("_extensions/qdk/assets/fonts/IBMPlexMono-BoldItalic.woff2") format("woff2"); font-style: italic; font-weight: 700; font-display: swap; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("#{$qdk-assets-root}/fonts/SchibstedGrotesk-Regular.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("#{$qdk-assets-root}/fonts/SchibstedGrotesk-Bold.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("#{$qdk-assets-root}/fonts/SourceSans3VF-Upright.ttf.woff2") format("woff2"); font-style: normal; font-weight: 400 600; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("#{$qdk-assets-root}/fonts/SourceSans3VF-Italic.ttf.woff2") format("woff2"); font-style: italic; font-weight: 400 600; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("#{$qdk-assets-root}/fonts/IBMPlexMono-Regular.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("#{$qdk-assets-root}/fonts/IBMPlexMono-Italic.woff2") format("woff2"); font-style: italic; font-weight: 400; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("#{$qdk-assets-root}/fonts/IBMPlexMono-Bold.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("#{$qdk-assets-root}/fonts/IBMPlexMono-BoldItalic.woff2") format("woff2"); font-style: italic; font-weight: 700; font-display: swap; }
 
 :root {
   --qdk-canvas: #{$body-bg};
@@ -158,11 +159,11 @@ div.callout .callout-header[aria-expanded="true"] .callout-toggle::before { tran
 .callout-warning { --qdk-callout-color: var(--qdk-callout-warning); }
 .callout-caution { --qdk-callout-color: var(--qdk-callout-caution); }
 .callout-note > .callout-header, .callout-tip > .callout-header, .callout-important > .callout-header, .callout-warning > .callout-header, .callout-caution > .callout-header { color: var(--qdk-callout-color); }
-.callout-note .callout-icon-container { -webkit-mask-image: url("_extensions/qdk/assets/icons/info.svg"); mask-image: url("_extensions/qdk/assets/icons/info.svg"); }
-.callout-tip .callout-icon-container { -webkit-mask-image: url("_extensions/qdk/assets/icons/flame.svg"); mask-image: url("_extensions/qdk/assets/icons/flame.svg"); }
-.callout-important .callout-icon-container { -webkit-mask-image: url("_extensions/qdk/assets/icons/circle-alert.svg"); mask-image: url("_extensions/qdk/assets/icons/circle-alert.svg"); }
-.callout-warning .callout-icon-container { -webkit-mask-image: url("_extensions/qdk/assets/icons/triangle-alert.svg"); mask-image: url("_extensions/qdk/assets/icons/triangle-alert.svg"); }
-.callout-caution .callout-icon-container { -webkit-mask-image: url("_extensions/qdk/assets/icons/octagon-alert.svg"); mask-image: url("_extensions/qdk/assets/icons/octagon-alert.svg"); }
+.callout-note .callout-icon-container { -webkit-mask-image: url("#{$qdk-assets-root}/icons/info.svg"); mask-image: url("#{$qdk-assets-root}/icons/info.svg"); }
+.callout-tip .callout-icon-container { -webkit-mask-image: url("#{$qdk-assets-root}/icons/flame.svg"); mask-image: url("#{$qdk-assets-root}/icons/flame.svg"); }
+.callout-important .callout-icon-container { -webkit-mask-image: url("#{$qdk-assets-root}/icons/circle-alert.svg"); mask-image: url("#{$qdk-assets-root}/icons/circle-alert.svg"); }
+.callout-warning .callout-icon-container { -webkit-mask-image: url("#{$qdk-assets-root}/icons/triangle-alert.svg"); mask-image: url("#{$qdk-assets-root}/icons/triangle-alert.svg"); }
+.callout-caution .callout-icon-container { -webkit-mask-image: url("#{$qdk-assets-root}/icons/octagon-alert.svg"); mask-image: url("#{$qdk-assets-root}/icons/octagon-alert.svg"); }
 .callout .callout { margin: 1rem 0; }
 #quarto-document-content div.callout.callout-style-default > .callout-body > :first-child, #quarto-document-content div.callout.callout-style-simple > .callout-body > :first-child, #quarto-document-content div.callout.callout-style-minimal > .callout-body > :first-child, #quarto-document-content div.callout.callout-style-default > .callout-collapse > .callout-body > :first-child, #quarto-document-content div.callout.callout-style-simple > .callout-collapse > .callout-body > :first-child, #quarto-document-content div.callout.callout-style-minimal > .callout-collapse > .callout-body > :first-child { margin-top: 0; }
 div.callout.callout-style-default:has(> .callout-body > .callout) > .callout-body, div.callout.callout-style-simple:has(> .callout-body > .callout) > .callout-body, div.callout.callout-style-minimal:has(> .callout-body > .callout) > .callout-body, div.callout.callout-style-default:has(> .callout-collapse > .callout-body > .callout) > .callout-collapse > .callout-body, div.callout.callout-style-simple:has(> .callout-collapse > .callout-body > .callout) > .callout-collapse > .callout-body, div.callout.callout-style-minimal:has(> .callout-collapse > .callout-body > .callout) > .callout-collapse > .callout-body { padding-inline: 0; }
