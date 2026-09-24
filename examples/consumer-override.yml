@@ -2,5 +2,5 @@
 format:
   qdk-html:
     theme:
-      light: [default, _extensions/qdk/qdk.scss, styles.scss]
-      dark: [default, _extensions/qdk/qdk.scss, _extensions/qdk/qdk-dark.scss, styles.scss]
+      light: [default, _extensions/arfiligol/qdk/qdk.scss, styles.scss]
+      dark: [default, _extensions/arfiligol/qdk/qdk.scss, _extensions/arfiligol/qdk/qdk-dark.scss, styles.scss]

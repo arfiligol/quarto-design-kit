@@ -1,0 +1,43 @@
+---
+title: "Prose"
+subtitle: "Links, lists, quotes, and the divider"
+---
+
+Article links are weight 600, with no underline. A link inside a paragraph
+gets a quiet highlight. Hover shifts from the link color to the tertiary color.
+
+A [highlighted link](headings.qmd) sits in a sentence. **Strong** and *emphasis*
+stay in the body face. A marked word is [kept visible]{.mark}.
+
+## Lists
+
+Markers use the tertiary color.
+
+- First unordered item
+- Second unordered item
+  - Nested item
+
+1. First ordered step
+2. Second ordered step
+
+Term
+: A definition stays in the same measure as the paragraph above it.
+
+## Quote
+
+> The quote rule is a 3px bar in the link color. The text color stays the body
+> color rather than a muted aside.
+
+## Divider
+
+Headings do not supply this line. Authors opt in with `---`.
+
+---
+
+The line is 1px, using the content divider token, at full opacity.
+
+## Limits
+
+The theme contains a paragraph link and a nested list inside the measure.
+A paragraph used as a heading, or a list item that is an entire section, should
+be rewritten as a heading plus a short paragraph.

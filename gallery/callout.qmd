@@ -1,0 +1,11 @@
+---
+title: "Callout target"
+---
+
+A Gallery section for the collapsible callout. The header does not gain an
+entry for this page.
+
+::: {.callout-tip title="Section callout" collapse="true"}
+Open this tip from the Gallery left list. Components keeps its own list, so
+this item does not appear there.
+:::

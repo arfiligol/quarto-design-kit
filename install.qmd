@@ -2,14 +2,14 @@
 title: "Install, customize, and update"
 ---
 
-## Install an exact candidate
+## Install the release
 
-Use an immutable candidate revision, not an editable symlink and not an
-unversioned moving branch. Before the first candidate commit is frozen,
-`CANDIDATE_COMMIT` is a deliberately replaceable placeholder.
+Use the reviewed `v0.1.0` tag after it is published, not an editable symlink or
+an unversioned moving branch. Quarto's GitHub installer resolves tags and
+branches; a commit SHA is not a supported `@` modifier.
 
 ```bash
-quarto add arfiligol/quarto-design-kit@CANDIDATE_COMMIT
+quarto add arfiligol/quarto-design-kit@v0.1.0
 ```
 
 Then select the format in a consumer `_quarto.yml`:
@@ -34,8 +34,8 @@ consumer's explicit final override visible:
 format:
   qdk-html:
     theme:
-      light: [default, _extensions/qdk/qdk.scss, styles.scss]
-      dark: [default, _extensions/qdk/qdk.scss, _extensions/qdk/qdk-dark.scss, styles.scss]
+      light: [default, _extensions/arfiligol/qdk/qdk.scss, styles.scss]
+      dark: [default, _extensions/arfiligol/qdk/qdk.scss, _extensions/arfiligol/qdk/qdk-dark.scss, styles.scss]
 ```
 
 ```scss
@@ -45,13 +45,13 @@ format:
 ```
 
 Render the consumer and inspect the resulting CSS to verify its final token
-value. Do not edit a copy inside `_extensions/qdk`; reinstall the exact revision
-instead.
+value. Do not edit a copy inside `_extensions/arfiligol/qdk`; reinstall the
+reviewed tag instead.
 
 ## Update
 
-Choose a new exact candidate revision only after reviewing its provenance and
+Choose a new version tag only after reviewing its provenance and
 rendering the consumer. Replace the installed extension through `quarto add`
-with that exact revision, commit the resulting `_extensions` change in the
-consumer, and repeat its own validation. Future release tags are not promised
-by this `0.1.0-dev` candidate.
+with that tag, commit the resulting `_extensions` change in the consumer, and
+repeat its own validation. The installed directory and its checked-in content
+are the consumer's dependency pin.

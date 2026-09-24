@@ -1,0 +1,11 @@
+---
+title: "Reading rhythm"
+---
+
+This page is a Gallery section. It is listed on the left, not in the header.
+
+The header stays on Gallery, Components, Install, and Credits. The left list
+is only the reading samples that belong to Gallery.
+
+Source Sans 3 carries the paragraph. The measure stays the same 630px column
+used on the overview, so a section page and its parent share one reading width.

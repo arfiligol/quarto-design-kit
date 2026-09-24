@@ -12,21 +12,76 @@ website:
       - href: components.qmd
         text: Components
       - href: install.qmd
-        text: Install & customize
+        text: Install
       - href: credits.qmd
         text: Credits
   sidebar:
-    style: docked
-    contents:
-      - index.qmd
-      - components.qmd
-      - notebook-output.qmd
-      - install.qmd
-      - credits.qmd
+    - id: gallery
+      title: "Pages"
+      style: docked
+      collapse-level: 2
+      contents:
+        - text: "Overview"
+          href: index.qmd
+        - text: "Layout"
+          href: gallery/layout.qmd
+        - text: "Rhythm"
+          href: gallery/rhythm.qmd
+        - text: "Callout target"
+          href: gallery/callout.qmd
+        - text: "CJK specimen"
+          href: gallery/cjk.qmd
+    - id: components
+      title: "Pages"
+      style: docked
+      collapse-level: 2
+      contents:
+        - text: "Overview"
+          href: components.qmd
+        - text: "Headings"
+          href: components/headings.qmd
+        - text: "Prose"
+          href: components/prose.qmd
+        - text: "Callouts"
+          href: components/callouts.qmd
+        - text: "Code"
+          href: components/code.qmd
+        - text: "Tables"
+          href: components/tables.qmd
+        - text: "Mathematics"
+          href: components/mathematics.qmd
+        - text: "References"
+          href: components/references.qmd
+        - text: "Figures and groups"
+          href: components/figures.qmd
+        - text: "Saved notebook output"
+          href: notebook-output.qmd
+    - id: install
+      title: "Pages"
+      style: docked
+      collapse-level: 2
+      contents:
+        - text: "Install, customize, and update"
+          href: install.qmd
+    - id: credits
+      title: "Pages"
+      style: docked
+      collapse-level: 2
+      contents:
+        - text: "Attribution"
+          href: credits.qmd
+        - text: "Third-party list"
+          href: THIRD_PARTY.md
+        - text: "Asset manifest"
+          href: ASSET_MANIFEST.md
 
 format:
   qdk-html:
+    theme:
+      light: [default, _extensions/qdk/qdk.scss, gallery-assets.scss]
+      dark: [default, _extensions/qdk/qdk.scss, _extensions/qdk/qdk-dark.scss, gallery-assets.scss]
     toc: true
+    toc-title: "Sections"
     toc-location: right
     code-copy: true
     code-overflow: wrap

@@ -1,0 +1,41 @@
+---
+title: "Layout"
+---
+
+This site is the Quarto Design Kit explaining itself. The names below are the
+three navigation roles used on these pages.
+
+## Areas
+
+The header items are Areas: Gallery, Components, Install, and Credits.
+Choosing an Area switches the Page List. An Area is not a heading inside a
+page, and it is not repeated as a row of the same pages on the left.
+
+## Page List
+
+The left column is titled Pages. Every item is a different page in the current
+Area. Gallery's list is this overview's siblings, including this page.
+Components lists its own pages, such as the saved notebook output.
+
+Headings inside one page do not belong here.
+
+## Section List
+
+The right column is titled Sections. It lists the headings of the current page
+only. The sections on this page — Areas, Page List, Section List, and the
+reading measure — stay on the right.
+
+## Reading measure
+
+On a wide desktop the article sits in the center. The theme variables are
+`$grid-sidebar-width` and `$grid-margin-width` at 240px, `$grid-body-width`
+and `$grid-docked-body-width` at 630px, and `$grid-column-gutter-width` at
+1.5rem. One rule in `qdk.scss` lays those widths out as equal outer space,
+then 240px, a gutter, 630px, a gutter, and 240px, and places the Page List in
+the left 240px column.
+
+Quarto's own docked formula would widen the body by 200px and leave the spare
+space on the right. The theme rule is what keeps the 630px measure centered.
+It follows Quarto updates that keep these variable names and the grid line
+names `screen-start` and `body-content-start`. A rewrite of those grid lines
+is the point where that one rule would need to be revised.

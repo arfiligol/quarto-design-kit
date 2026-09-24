@@ -1,0 +1,30 @@
+---
+title: "Code"
+subtitle: "Inline code and fenced blocks"
+---
+
+Inline code uses IBM Plex Mono on the highlight token. Fenced blocks keep a
+transparent fill, a 1px border, and a 5px radius, with padding that leaves
+the copy control clear of the first line. Copy stays Quarto's control.
+Long lines scroll inside the block instead of widening the page.
+
+An inline sample is `qdk-html`.
+
+```python
+def describe_reading_surface(theme: str, width: int) -> str:
+    return f"{theme} surface at {width}px retains local overflow boundaries"
+
+long_line = "qdk keeps this intentionally long source line in a local preformatted scroll area rather than allowing it to widen the whole page beyond the reader viewport"
+print(describe_reading_surface("dark", 360), long_line)
+```
+
+```{.python filename="reading.py"}
+def quiet(width: int) -> str:
+    return f"measure {width}px"
+```
+
+## Limits
+
+The theme contains a long source line by scrolling inside the fenced block.
+Do not wrap a paragraph in a code fence to force a measure; prose belongs in
+the article, and a fence is for source.
