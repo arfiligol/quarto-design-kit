@@ -23,8 +23,9 @@ be reviewed before any further change.
 
 ## Still Quarto's own presentation
 
-- [Figures and groups](components/figures.qmd). Figures, columns, tabsets, and
-  diagrams. These are on the page so the default rendering can be judged.
+- [Figures and groups](components/figures.qmd). Columns, tabsets, diagrams,
+  and an image from the Plotly Design Kit. The groups stay Quarto's own
+  presentation. The image uses Quarto's folded Source.
 - [Saved notebook output](notebook-output.qmd). A real executed cell, separate
   from a fenced code block.
 

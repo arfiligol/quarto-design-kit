@@ -1,6 +1,9 @@
 ---
 title: "Figures and groups"
 subtitle: "Still Quarto's presentation"
+jupyter: python3
+execute:
+  echo: true
 ---
 
 These components render with Quarto's own layout. The Kit does not yet restyle
@@ -29,6 +32,26 @@ A tab is a Quarto panel, not a Kit component.
 
 The second panel stays in the same article width.
 :::
+
+## Image
+
+Images in this document come from the Plotly Design Kit. The chart below is
+its bars-and-markers figure, saved here as a static image. Quarto's folded
+cell keeps the embed source behind Source and shows the image underneath.
+
+```{python}
+#| code-fold: true
+#| code-summary: "Source"
+from IPython.display import Image
+Image("images/bars-semantic-markers.png")
+```
+
+A page that only needs the picture, without a source disclosure, embeds it
+directly:
+
+```markdown
+![Bars with semantic markers](images/bars-semantic-markers.png)
+```
 
 ## Diagram
 
