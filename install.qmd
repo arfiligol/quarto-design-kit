@@ -4,12 +4,12 @@ title: "Install, customize, and update"
 
 ## Install the release
 
-Use the reviewed `v0.1.0` tag after it is published, not an editable symlink or
+Use the reviewed `v0.2.0` tag, not an editable symlink or
 an unversioned moving branch. Quarto's GitHub installer resolves tags and
 branches; a commit SHA is not a supported `@` modifier.
 
 ```bash
-quarto add arfiligol/quarto-design-kit@v0.1.0
+quarto add arfiligol/quarto-design-kit@v0.2.0
 ```
 
 Then select the format in a consumer `_quarto.yml`:
