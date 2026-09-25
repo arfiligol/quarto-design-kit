@@ -1,0 +1,8 @@
+---
+title: "Long list"
+---
+
+This Area exists to review a long, nested Page List. Open it from the
+narrow-window Page List button and scroll.
+
+The groups stay expanded so the length is visible. Deeper items are indented.
