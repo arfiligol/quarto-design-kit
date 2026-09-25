@@ -15,6 +15,8 @@ website:
         text: Install
       - href: credits.qmd
         text: Credits
+      - href: gallery/long-list.qmd
+        text: Long list
   sidebar:
     - id: gallery
       title: "Pages"
@@ -63,6 +65,217 @@ website:
       contents:
         - text: "Install, customize, and update"
           href: install.qmd
+    - id: long-list
+      title: "Pages"
+      style: docked
+      collapse-level: 1
+      contents:
+        - text: "Overview"
+          href: gallery/long-list.qmd
+        - section: "Readout"
+          contents:
+            - section: "Quarter wave"
+              contents:
+                - text: "Quarter wave 01"
+                  href: gallery/long-list/g1-s1-01.qmd
+                - text: "Quarter wave with a long name that wraps onto a second line"
+                  href: gallery/long-list/g1-s1-02.qmd
+                - text: "Quarter wave 03"
+                  href: gallery/long-list/g1-s1-03.qmd
+            - section: "Purcell filter"
+              contents:
+                - text: "Purcell filter 01"
+                  href: gallery/long-list/g1-s2-01.qmd
+                - text: "Purcell filter 02"
+                  href: gallery/long-list/g1-s2-02.qmd
+                - text: "Purcell filter 03"
+                  href: gallery/long-list/g1-s2-03.qmd
+            - section: "Coupling window"
+              contents:
+                - text: "Coupling window 01"
+                  href: gallery/long-list/g1-s3-01.qmd
+                - text: "Coupling window 02"
+                  href: gallery/long-list/g1-s3-02.qmd
+                - text: "Coupling window 03"
+                  href: gallery/long-list/g1-s3-03.qmd
+            - section: "Launch"
+              contents:
+                - text: "Launch 01"
+                  href: gallery/long-list/g1-s4-01.qmd
+                - text: "Launch 02"
+                  href: gallery/long-list/g1-s4-02.qmd
+                - text: "Launch 03"
+                  href: gallery/long-list/g1-s4-03.qmd
+        - section: "Qubit"
+          contents:
+            - section: "Transmon"
+              contents:
+                - text: "Transmon 01"
+                  href: gallery/long-list/g2-s1-01.qmd
+                - text: "Transmon with a long name that wraps onto a second line"
+                  href: gallery/long-list/g2-s1-02.qmd
+                - text: "Transmon 03"
+                  href: gallery/long-list/g2-s1-03.qmd
+            - section: "Flux bias"
+              contents:
+                - text: "Flux bias 01"
+                  href: gallery/long-list/g2-s2-01.qmd
+                - text: "Flux bias 02"
+                  href: gallery/long-list/g2-s2-02.qmd
+                - text: "Flux bias 03"
+                  href: gallery/long-list/g2-s2-03.qmd
+            - section: "Charge line"
+              contents:
+                - text: "Charge line 01"
+                  href: gallery/long-list/g2-s3-01.qmd
+                - text: "Charge line 02"
+                  href: gallery/long-list/g2-s3-02.qmd
+                - text: "Charge line 03"
+                  href: gallery/long-list/g2-s3-03.qmd
+            - section: "Readout pad"
+              contents:
+                - text: "Readout pad 01"
+                  href: gallery/long-list/g2-s4-01.qmd
+                - text: "Readout pad 02"
+                  href: gallery/long-list/g2-s4-02.qmd
+                - text: "Readout pad 03"
+                  href: gallery/long-list/g2-s4-03.qmd
+        - section: "Control"
+          contents:
+            - section: "XY drive"
+              contents:
+                - text: "XY drive 01"
+                  href: gallery/long-list/g3-s1-01.qmd
+                - text: "XY drive with a long name that wraps onto a second line"
+                  href: gallery/long-list/g3-s1-02.qmd
+                - text: "XY drive 03"
+                  href: gallery/long-list/g3-s1-03.qmd
+            - section: "Z drive"
+              contents:
+                - text: "Z drive 01"
+                  href: gallery/long-list/g3-s2-01.qmd
+                - text: "Z drive 02"
+                  href: gallery/long-list/g3-s2-02.qmd
+                - text: "Z drive 03"
+                  href: gallery/long-list/g3-s2-03.qmd
+            - section: "Attenuation"
+              contents:
+                - text: "Attenuation 01"
+                  href: gallery/long-list/g3-s3-01.qmd
+                - text: "Attenuation 02"
+                  href: gallery/long-list/g3-s3-02.qmd
+                - text: "Attenuation 03"
+                  href: gallery/long-list/g3-s3-03.qmd
+            - section: "Filtering"
+              contents:
+                - text: "Filtering 01"
+                  href: gallery/long-list/g3-s4-01.qmd
+                - text: "Filtering 02"
+                  href: gallery/long-list/g3-s4-02.qmd
+                - text: "Filtering 03"
+                  href: gallery/long-list/g3-s4-03.qmd
+        - section: "Packaging"
+          contents:
+            - section: "Box"
+              contents:
+                - text: "Box 01"
+                  href: gallery/long-list/g4-s1-01.qmd
+                - text: "Box with a long name that wraps onto a second line"
+                  href: gallery/long-list/g4-s1-02.qmd
+                - text: "Box 03"
+                  href: gallery/long-list/g4-s1-03.qmd
+            - section: "Seam"
+              contents:
+                - text: "Seam 01"
+                  href: gallery/long-list/g4-s2-01.qmd
+                - text: "Seam 02"
+                  href: gallery/long-list/g4-s2-02.qmd
+                - text: "Seam 03"
+                  href: gallery/long-list/g4-s2-03.qmd
+            - section: "Lid"
+              contents:
+                - text: "Lid 01"
+                  href: gallery/long-list/g4-s3-01.qmd
+                - text: "Lid 02"
+                  href: gallery/long-list/g4-s3-02.qmd
+                - text: "Lid 03"
+                  href: gallery/long-list/g4-s3-03.qmd
+            - section: "Connector"
+              contents:
+                - text: "Connector 01"
+                  href: gallery/long-list/g4-s4-01.qmd
+                - text: "Connector 02"
+                  href: gallery/long-list/g4-s4-02.qmd
+                - text: "Connector 03"
+                  href: gallery/long-list/g4-s4-03.qmd
+        - section: "Measurement"
+          contents:
+            - section: "VNA"
+              contents:
+                - text: "VNA 01"
+                  href: gallery/long-list/g5-s1-01.qmd
+                - text: "VNA with a long name that wraps onto a second line"
+                  href: gallery/long-list/g5-s1-02.qmd
+                - text: "VNA 03"
+                  href: gallery/long-list/g5-s1-03.qmd
+            - section: "Time domain"
+              contents:
+                - text: "Time domain 01"
+                  href: gallery/long-list/g5-s2-01.qmd
+                - text: "Time domain 02"
+                  href: gallery/long-list/g5-s2-02.qmd
+                - text: "Time domain 03"
+                  href: gallery/long-list/g5-s2-03.qmd
+            - section: "Power sweep"
+              contents:
+                - text: "Power sweep 01"
+                  href: gallery/long-list/g5-s3-01.qmd
+                - text: "Power sweep 02"
+                  href: gallery/long-list/g5-s3-02.qmd
+                - text: "Power sweep 03"
+                  href: gallery/long-list/g5-s3-03.qmd
+            - section: "Temperature"
+              contents:
+                - text: "Temperature 01"
+                  href: gallery/long-list/g5-s4-01.qmd
+                - text: "Temperature 02"
+                  href: gallery/long-list/g5-s4-02.qmd
+                - text: "Temperature 03"
+                  href: gallery/long-list/g5-s4-03.qmd
+        - section: "Notes"
+          contents:
+            - section: "Open question"
+              contents:
+                - text: "Open question 01"
+                  href: gallery/long-list/g6-s1-01.qmd
+                - text: "Open question with a long name that wraps onto a second line"
+                  href: gallery/long-list/g6-s1-02.qmd
+                - text: "Open question 03"
+                  href: gallery/long-list/g6-s1-03.qmd
+            - section: "Abandoned branch"
+              contents:
+                - text: "Abandoned branch 01"
+                  href: gallery/long-list/g6-s2-01.qmd
+                - text: "Abandoned branch 02"
+                  href: gallery/long-list/g6-s2-02.qmd
+                - text: "Abandoned branch 03"
+                  href: gallery/long-list/g6-s2-03.qmd
+            - section: "Calibration"
+              contents:
+                - text: "Calibration 01"
+                  href: gallery/long-list/g6-s3-01.qmd
+                - text: "Calibration 02"
+                  href: gallery/long-list/g6-s3-02.qmd
+                - text: "Calibration 03"
+                  href: gallery/long-list/g6-s3-03.qmd
+            - section: "Handoff"
+              contents:
+                - text: "Handoff 01"
+                  href: gallery/long-list/g6-s4-01.qmd
+                - text: "Handoff 02"
+                  href: gallery/long-list/g6-s4-02.qmd
+                - text: "Handoff 03"
+                  href: gallery/long-list/g6-s4-03.qmd
     - id: credits
       title: "Pages"
       style: docked

@@ -7,9 +7,9 @@ three navigation roles used on these pages.
 
 ## Areas
 
-The header items are Areas: Gallery, Components, Install, and Credits.
-Choosing an Area switches the Page List. An Area is not a heading inside a
-page, and it is not repeated as a row of the same pages on the left.
+The header items are Areas: Gallery, Components, Install, Credits, and Long
+list. Choosing an Area switches the Page List. An Area is not a heading
+inside a page, and it is not repeated as a row of the same pages on the left.
 
 ## Page List
 
@@ -22,20 +22,32 @@ Headings inside one page do not belong here.
 ## Section List
 
 The right column is titled Sections. It lists the headings of the current page
-only. The sections on this page — Areas, Page List, Section List, and the
-reading measure — stay on the right.
+only. The sections on this page — Areas, Page List, Section List, the
+reading measure, and RWD — stay on the right.
 
 ## Reading measure
 
-On a wide desktop the article sits in the center. The theme variables are
-`$grid-sidebar-width` and `$grid-margin-width` at 240px, `$grid-body-width`
-and `$grid-docked-body-width` at 630px, and `$grid-column-gutter-width` at
-1.5rem. One rule in `qdk.scss` lays those widths out as equal outer space,
-then 240px, a gutter, 630px, a gutter, and 240px, and places the Page List in
-the left 240px column.
+On a wide desktop the article sits in the center. The reference is a 14-inch
+laptop at about 50cm: 18px type and a 630px column, about 70 characters a
+line. A farther screen needs a larger size to keep that same angle. The
+column grows with the type, so the line does not get shorter. Below 630px the
+article uses the full window.
 
-Quarto's own docked formula would widen the body by 200px and leave the spare
-space on the right. The theme rule is what keeps the 630px measure centered.
-It follows Quarto updates that keep these variable names and the grid line
-names `screen-start` and `body-content-start`. A rewrite of those grid lines
-is the point where that one rule would need to be revised.
+## RWD
+
+Content type is the article and its headings. UI size is everything else:
+Area links, the text in both side columns, and icons. The two scales move
+on their own.
+
+| Window width | Content | UI size | Area links | Side text | Article | Side columns | Gutter |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 992–1439 | 17px | 1.08 | 17px | 14px | 630px | 200px, then 240px from 1280 | 16px, then 22px |
+| 1440–1919 | 18px | 1.15 | 18px | 15px | 630px | 264px | 26px |
+| 1920–2559 | 20px | 1.27 | 20px | 17px | 693px | 290px | 29px |
+| 2560 and up | 22px | 1.4 | 22px | 19px | 756px | 320px | 31px |
+
+1440–1919 is the 14-inch reference. Content stays at 18px. UI size there is
+1.15, so Area links are 18px and icons use that same step. Wider bands scale
+content and UI separately for viewing distance. These bands follow layout
+width. A 4K display scaled to 1920px wide uses the 1920 band. 16:9 and 16:10
+at the same width share a band.

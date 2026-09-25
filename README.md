@@ -1,16 +1,16 @@
 # Quarto Design Kit
 
-`0.1.0` is the first release candidate of the native Quarto HTML design kit,
+`0.2.0` is the current release of the native Quarto HTML design kit,
 validated with Quarto 1.10.18. Its visual contract remains CONVERGING until
 explicitly accepted; the version does not imply semantic stabilization.
 
 ## Install
 
-Install the reviewed release tag once `v0.1.0` is published. Quarto's GitHub
+Install the reviewed release tag `v0.2.0`. Quarto's GitHub
 installer accepts branch and tag names, not commit SHA modifiers:
 
 ```bash
-quarto add arfiligol/quarto-design-kit@v0.1.0
+quarto add arfiligol/quarto-design-kit@v0.2.0
 ```
 
 ```yaml
@@ -34,9 +34,9 @@ a separate public authoring syntax contract.
 
 QDK is intended as a reusable design system for direct SCQ-repository
 adoption. The theme Sass variables `$grid-sidebar-width` and `$grid-margin-width`
-are 240px, `$grid-body-width` and `$grid-docked-body-width` are 630px, and
-`$grid-column-gutter-width` is 1.5rem. One docked track rule in `qdk.scss`
-uses those variables so the 630px measure stays centered between equal side
+are 264px, `$grid-body-width` and `$grid-docked-body-width` are 630px, and
+`$grid-column-gutter-width` is 26px. The root font size is 18px. One docked
+track rule in `qdk.scss` uses those variables so the 630px measure stays centered between equal side
 columns; consumers retain Quarto's responsive layout, navigation, and runtime
 ownership.
 
