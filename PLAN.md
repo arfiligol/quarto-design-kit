@@ -23,8 +23,8 @@ dividers in each native theme; manual Markdown `---` is the opt-in content
 divider, while sidebar and navigation boundaries use the layout token.
 QDK is a reusable design-system candidate for direct SCQ-repository adoption.
 Its layout contract is the theme variables `$grid-sidebar-width` and
-`$grid-margin-width` at 240px, `$grid-body-width` and `$grid-docked-body-width`
-at 630px, and `$grid-column-gutter-width` at 1.5rem. `$sidebar-border` is
+`$grid-margin-width` at 264px, `$grid-body-width` and `$grid-docked-body-width`
+at 630px, and `$grid-column-gutter-width` at 26px. The root font size is 18px. `$sidebar-border` is
 false. One `scss:rules` track list restates the docked grid from those
 variables so the 630px measure stays centered; Quarto's own formula would add
 200px to the body and leave the spare space in a right-hand 5fr column. That

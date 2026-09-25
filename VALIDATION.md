@@ -82,12 +82,12 @@ desktop docked sidebar no longer draws a layout-token seam, so the side
 columns share the article canvas.
 
 The native article-grid defaults now compile from `$grid-sidebar-width` and
-`$grid-margin-width` at 240px, `$grid-body-width` and `$grid-docked-body-width`
-at 630px, and `$grid-column-gutter-width` at 1.5rem. `$sidebar-border` is
+`$grid-margin-width` at 264px, `$grid-body-width` and `$grid-docked-body-width`
+at 630px, and `$grid-column-gutter-width` at 26px. `$sidebar-border` is
 false, so the desktop docked sidebar does not draw a layout seam. Quarto's
 docked formula still widens the body by 200px and leaves spare space in a
 right-hand flexible column, so one `qdk.scss` rule restates the desktop docked
-grid from those variables: outer flexible tracks, 240px side columns, 1.5rem
+grid from those variables: outer flexible tracks, 264px side columns, 26px
 gutters, and a 630px measure. `#quarto-document-content`
 is a 630px-or-less box with `justify-self: center` and auto inline margins, so
 it fills that track and stays centered between the side columns. Navbar rules

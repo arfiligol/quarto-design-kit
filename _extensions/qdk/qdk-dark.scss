@@ -19,6 +19,7 @@ $code-block-bg: #1f1f22;
 $pre-color: #ebebec;
 
 /*-- scss:rules --*/
+html { color-scheme: dark; }
 #quarto-appendix.default {
   background-color: var(--qdk-canvas);
   border-top-color: var(--qdk-border);

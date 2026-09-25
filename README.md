@@ -34,9 +34,9 @@ a separate public authoring syntax contract.
 
 QDK is intended as a reusable design system for direct SCQ-repository
 adoption. The theme Sass variables `$grid-sidebar-width` and `$grid-margin-width`
-are 240px, `$grid-body-width` and `$grid-docked-body-width` are 630px, and
-`$grid-column-gutter-width` is 1.5rem. One docked track rule in `qdk.scss`
-uses those variables so the 630px measure stays centered between equal side
+are 264px, `$grid-body-width` and `$grid-docked-body-width` are 630px, and
+`$grid-column-gutter-width` is 26px. The root font size is 18px. One docked
+track rule in `qdk.scss` uses those variables so the 630px measure stays centered between equal side
 columns; consumers retain Quarto's responsive layout, navigation, and runtime
 ownership.
 
