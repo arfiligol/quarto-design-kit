@@ -1,16 +1,16 @@
 # Quarto Design Kit
 
-`0.2.0` is the current release of the native Quarto HTML design kit,
+`0.2.1` is the current release of the native Quarto HTML design kit,
 validated with Quarto 1.10.18. Its visual contract remains CONVERGING until
 explicitly accepted; the version does not imply semantic stabilization.
 
 ## Install
 
-Install the reviewed release tag `v0.2.0`. Quarto's GitHub
+Install the reviewed release tag `v0.2.1`. Quarto's GitHub
 installer accepts branch and tag names, not commit SHA modifiers:
 
 ```bash
-quarto add arfiligol/quarto-design-kit@v0.2.0
+quarto add arfiligol/quarto-design-kit@v0.2.1
 ```
 
 ```yaml

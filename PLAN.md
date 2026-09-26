@@ -3,7 +3,7 @@
 ## Goal and state
 
 This repository owns the `qdk-html` native Quarto HTML extension and its local
-gallery. The **0.2.0 release** targets Quarto 1.10.18. Its visual
+gallery. The **0.2.1 release** targets Quarto 1.10.18. Its visual
 semantics remain CONVERGING until explicit Human acceptance; a version number,
 merge, or tag does not establish semantic stabilization or deployment.
 
