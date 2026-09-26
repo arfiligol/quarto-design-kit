@@ -4,12 +4,12 @@ title: "Install, customize, and update"
 
 ## Install the release
 
-Use the reviewed `v0.2.0` tag, not an editable symlink or
+Use the reviewed `v0.2.1` tag, not an editable symlink or
 an unversioned moving branch. Quarto's GitHub installer resolves tags and
 branches; a commit SHA is not a supported `@` modifier.
 
 ```bash
-quarto add arfiligol/quarto-design-kit@v0.2.0
+quarto add arfiligol/quarto-design-kit@v0.2.1
 ```
 
 Then select the format in a consumer `_quarto.yml`:
@@ -55,3 +55,13 @@ rendering the consumer. Replace the installed extension through `quarto add`
 with that tag, commit the resulting `_extensions` change in the consumer, and
 repeat its own validation. The installed directory and its checked-in content
 are the consumer's dependency pin.
+
+## Figures that follow the toggle
+
+A cell can emit a light output and a dark output. Quarto shows the one that matches `body.quarto-dark`. Put the light output first:
+
+```python
+#| renderings: [light, dark]
+```
+
+Draw or display the light figure, then the dark figure. With `qdk-html` and `theme-toggle`, the dark stylesheet carries `data-mode="dark"`, and the toggle adds `quarto-dark` to `body`. Do not set `data-mode` from the page. The Figures page in this gallery renders a pair of swatches this way.
