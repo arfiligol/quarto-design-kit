@@ -53,6 +53,29 @@ directly:
 ![Bars with semantic markers](images/bars-semantic-markers.png)
 ```
 
+## Theme toggle
+
+Quarto keeps two outputs from one cell and shows one of them. `body.quarto-dark` hides `.light-content`; `body.quarto-light` hides `.dark-content`. The Kit's dark stylesheet is marked `data-mode="dark"`, so the header toggle adds and removes `quarto-dark` with the stylesheet.
+
+Emit the light output first, then the dark output:
+
+```{python}
+#| renderings: [light, dark]
+#| code-fold: true
+#| code-summary: "Source"
+from IPython.display import HTML, display
+
+def swatch(background, foreground, label):
+    display(HTML(
+        f'<p style="margin:0;padding:1rem 1.25rem;background:{background};color:{foreground}">{label}</p>'
+    ))
+
+swatch("#faf8f8", "#2b2b2b", "Light rendering")
+swatch("#161618", "#ebebec", "Dark rendering")
+```
+
+The same order works for a Plotly figure: draw the light figure, then the dark figure, under `#| renderings: [light, dark]`. The figure colors are baked into each output. The toggle does not recolor a single picture.
+
 ## Diagram
 
 ```{mermaid}
